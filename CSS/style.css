@@ -1,0 +1,58 @@
+/* Partie modification visuelle de l'accordéon */
+.accordéon {
+    width: 80%;
+    margin: auto;
+}
+
+.accordéon-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.accordéon-header {
+    background-color: #005ec3;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordéon-header-Pref {
+    background: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordéon-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+}
+
+.content-container img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.content-container p {
+    flex: 1;
+}
+
+/* Responsive sur un appareil standard de 600px */ 
+
+@media (max-width: 600px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-container img {
+        margin: 0 auto 10px auto;
+    }
+}
